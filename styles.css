@@ -1,0 +1,299 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 80px;
+  }
+
+   /* Header Styles */
+.main-header {
+    position: fixed;
+    top: 0%;
+    right: 0;
+    left: 0;
+    max-width: 1200px;
+    background-color: #333;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+}
+
+.logo img {
+    width: 50px; /* Adjust the logo size */
+    height: 50px;
+    object-fit: contain;
+    background-color: #f0f0f0;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu ul li {
+    margin-left: 2rem; /* Add margin between menu items */
+}
+
+.nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-menu ul li a:hover {
+    color: #c19a6b; /* Coffee theme color */
+}
+
+.notification {
+    background-color: red; /* Change color as needed */
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    position: absolute; /* Adjust position if needed */
+    top: 5px; /* Adjust position */
+    right: 10px; /* Adjust position */
+    font-size: 14px; /* Adjust font size */
+}
+
+.header {background: url('1920x1080.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-radius: 5px;
+    text-decoration: none;
+
+  }
+
+
+.header a:hover {
+    background-color: #a57c58; /* Darken color on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+ 
+  .header h1 {
+    font-size: 4rem;
+    margin: 0;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+  }
+  
+  .header a {
+    background: #c19a6b;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+   /* Today's Special Section */
+.todays-special {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: #f5f5f5; /* Light background */
+}
+
+.todays-special h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333; /* Darker text */
+}
+
+.special-items {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Space between items */
+}
+
+.special-items .item {
+    flex: 1 1 30%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.special-items .item:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.special-items .item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+}
+
+.special-items .item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #c19a6b; /* Coffee theme color */
+}
+
+.special-items .item p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+    background-color: #c19a6b;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #a57c58;
+}
+
+/* this is footer section */
+.footer {
+    background: #333;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .footer a {
+    color: #c19a6b;
+    text-decoration: none;
+  }
+  
+/* extra design needed for Menu page */
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.section.offer div {
+    flex: 1 1 30%; /* Adjusted to fit three items more evenly */
+    margin: 1rem;
+    text-align: center;
+}
+
+.section.offer img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%; /* Optionally, make images circular */
+}
+
+.section.offer h3 {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.section.offer p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center items */
+    padding: 20px; /* Add some padding around the items */
+}
+
+.menu-item {
+    background-color: #f9f9f9; /* Light background for menu items */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 8px; /* Rounded corners */
+    margin: 10px; /* Space between items */
+    padding: 10px; /* Space inside items */
+    text-align: center; /* Center text */
+    width: 200px; /* Fixed width */
+}
+
+.menu-item img {
+    width: 100%; /* Make images responsive */
+    border-radius: 8px 8px 0 0; /* Rounded top corners */
+}
+
+.menu-item:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+}
+
+/* this is for extra design needed for order page */
+#ordersList {
+    width: 80%;
+    margin: 20px auto;
+    list-style-type: none;
+    padding: 0;
+}
+
+.order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff; /* White background for order items */
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+.order-name {
+    flex: 1; /* Allow name to take available space */
+}
+
+.order-price {
+    margin-left: 10px; /* Space between name and price */
+    color: #555; /* Darker color for price */
+}
+
+.remove-item {
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+}
+
+#Container {
+    text-align: center;
+    margin: 20px 0;
+    background-color: #fff; /* White background for total */
+    padding: 20px; /* Padding around total section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+#checkoutButton {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded button corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+#checkoutButton:hover {
+    background-color: darkgreen; /* Darker shade on hover */
+}

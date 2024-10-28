@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Coffee Factory</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="main-header">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html"><img src="logo.jpeg" alt="Coffee Factory Logo"></a>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="menu.html">Menu</a></li>
+                <li><style>
+                  .notification {
+                      background-color: red; /* Change color as needed */
+                      color: white;
+                      border-radius: 50%;
+                      padding: 2px 6px;
+                      position: absolute; /* Adjust position if needed */
+                      top: 5px; /* Adjust position */
+                      right: 10px; /* Adjust position */
+                      font-size: 14px; /* Adjust font size */
+                  }
+                  </style>
+                    <a href="orders.html">My Orders</a>
+                    <span id="cartCount" class="notification">0</span> <!-- Notification badge -->
+                </li>
+            </ul>
+        </nav>
+    </div>
+  </header>     
+  <header class="header">
+    
+    <h1>COFFEE with Nimesh</h1>
+    <p>Feel Better, Sip Better</p>
+    <a href="menu.html" class="shop-button">SHOP HERE</a> <!-- Added href to link to the menu page -->
+  </header>
+
+  <section class="todays-special">
+      <h2>Today's Special</h2>
+      <div class="special-items">
+        <div class="menu-item">
+          <img src="cappuccino.jpg" alt="Cappuccino">
+          <h3>Cappuccino</h3>
+          <p>$5.00</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+          <img src="specialmocha.jpeg" alt="NSM">
+          <h3>Nemo's Special Mocha</h3>
+          <p>$6.50</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+          <img src="croissant.jpeg" alt="Croissant">
+          <h3>Croissant</h3>
+          <p>$3.00</p>
+          <button class="add-to-cart">Add to Cart</button>
+        </div>
+      </div>
+  </section>
+  <script src="script.js"></script>
+
+
+  <!-- Other sections follow the same pattern, you can copy and paste the content from the previous code -->
+
+  <footer class="footer">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <a href="#">CONTACT US</a>
+    <p>123 Coffee Street, New York, USA</p>
+    <p>NEWS AS FRESH AS OUR COFFEE</p>
+    <form>
+      <input type="email" placeholder="Your email" />
+      <button type="submit">SUBSCRIBE</button>
+    </form>
+    <p>© 2023 Coffee Factory. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

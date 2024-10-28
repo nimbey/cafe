@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Coffee Factory - Your Orders</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="logo.jpeg" alt="Coffee Factory Logo"></a>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li>
+                        <a href="orders.html">My Orders</a>
+                        <span id="cartCount" class="notification">0</span>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main> 
+        <br><br><br>
+        <div class="container">
+            <h1>Your Orders</h1>
+            <ul id="ordersList"></ul>
+            <div id="totalPriceContainer">
+                <h3>Total Price: $<span id="totalPrice">0.00</span></h3>
+            </div>
+            <button id="checkoutButton">Checkout</button>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <a href="#">CONTACT US</a>
+        <p>123 Coffee Street, New York, USA</p>
+        <p>NEWS AS FRESH AS OUR COFFEE</p>
+        <form>
+            <input type="email" placeholder="Your email" />
+            <button type="submit">SUBSCRIBE</button>
+        </form>
+        <p>© 2023 Coffee Factory. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
